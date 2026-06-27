@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NOIR вЂ” РљР°С‚Р°Р»РѕРі</title>
+  <title>NOIR — Каталог</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,25 +14,25 @@
     <div class="container header__inner">
       <a href="#" class="header__logo">NOIR</a>
 
-      <nav class="header__nav" aria-label="РћСЃРЅРѕРІРЅР°СЏ РЅР°РІРёРіР°С†РёСЏ">
-        <button type="button" class="header__icon-btn" aria-label="РџРѕРёСЃРє">
+      <nav class="header__nav" aria-label="Основная навигация">
+        <button type="button" class="header__icon-btn" aria-label="Поиск">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"/>
             <path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </button>
-        <button type="button" class="header__icon-btn" aria-label="РР·Р±СЂР°РЅРЅРѕРµ">
+        <button type="button" class="header__icon-btn" aria-label="Избранное">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path d="M10 16.5l-1.05-1.02C4.5 11.36 2 9.05 2 6.25 2 4.1 3.67 2.5 5.75 2.5c1.24 0 2.43.58 3.25 1.49C9.82 3.08 11.01 2.5 12.25 2.5 14.33 2.5 16 4.1 16 6.25c0 2.8-2.5 5.11-6.95 9.23L10 16.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
           </svg>
         </button>
-        <button type="button" class="header__icon-btn" aria-label="РџСЂРѕС„РёР»СЊ">
+        <button type="button" class="header__icon-btn" aria-label="Профиль">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <circle cx="10" cy="7" r="3.25" stroke="currentColor" stroke-width="1.5"/>
             <path d="M4.5 17c0-3.038 2.462-5.5 5.5-5.5s5.5 2.462 5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </button>
-        <button type="button" class="header__icon-btn" aria-label="РљРѕСЂР·РёРЅР°">
+        <button type="button" class="header__icon-btn" aria-label="Корзина">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path d="M3 3h1.5l1.2 10.2a1.5 1.5 0 001.49 1.3h7.62a1.5 1.5 0 001.49-1.3L16.5 6H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <circle cx="8" cy="17" r="1" fill="currentColor"/>
@@ -47,112 +47,112 @@
     <section class="catalog" aria-labelledby="catalog-title">
       <div class="container">
         <header class="catalog__header">
-          <p class="catalog__eyebrow">РќРѕРІР°СЏ РєРѕР»Р»РµРєС†РёСЏ</p>
-          <h1 id="catalog-title" class="catalog__title">РљР°С‚Р°Р»РѕРі</h1>
-          <p class="catalog__subtitle">РњРёРЅРёРјР°Р»РёСЃС‚РёС‡РЅР°СЏ Р±Р°Р·РѕРІР°СЏ РѕРґРµР¶РґР° РЅР° РєР°Р¶РґС‹Р№ РґРµРЅСЊ</p>
+          <p class="catalog__eyebrow">Новая коллекция</p>
+          <h1 id="catalog-title" class="catalog__title">Каталог</h1>
+          <p class="catalog__subtitle">Минималистичная базовая одежда на каждый день</p>
         </header>
 
         <div class="catalog__layout">
           <div class="filter-panel">
             <input type="checkbox" id="filter-toggle" class="filter-toggle">
             <label for="filter-toggle" class="filter-toggle-btn">
-              <span class="filter-toggle-btn__text">Р¤РёР»СЊС‚СЂС‹</span>
+              <span class="filter-toggle-btn__text">Фильтры</span>
               <svg class="filter-toggle-btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </label>
 
-            <aside class="filter" aria-label="Р¤РёР»СЊС‚СЂС‹ РєР°С‚Р°Р»РѕРіР°">
-            <div class="filter__head">
-              <h2 class="filter__title">Р¤РёР»СЊС‚СЂС‹</h2>
-              <button type="button" class="filter__reset">РЎР±СЂРѕСЃРёС‚СЊ</button>
-            </div>
-
-            <fieldset class="filter__group">
-              <legend class="filter__legend">РљР°С‚РµРіРѕСЂРёСЏ</legend>
-              <label class="filter__option">
-                <input type="checkbox" class="filter__input" checked>
-                <span class="filter__label">РЎРІРёС‚С€РѕС‚С‹</span>
-              </label>
-              <label class="filter__option">
-                <input type="checkbox" class="filter__input" checked>
-                <span class="filter__label">РҐСѓРґРё</span>
-              </label>
-              <label class="filter__option">
-                <input type="checkbox" class="filter__input" checked>
-                <span class="filter__label">Р¤СѓС‚Р±РѕР»РєРё</span>
-              </label>
-              <label class="filter__option">
-                <input type="checkbox" class="filter__input" checked>
-                <span class="filter__label">Р›РѕРЅРіСЃР»РёРІС‹</span>
-              </label>
-            </fieldset>
-
-            <fieldset class="filter__group">
-              <legend class="filter__legend">Р Р°Р·РјРµСЂ</legend>
-              <div class="filter__sizes">
-                <label class="filter__size">
-                  <input type="checkbox" class="filter__input filter__input--size">
-                  <span class="filter__size-label">XS</span>
-                </label>
-                <label class="filter__size">
-                  <input type="checkbox" class="filter__input filter__input--size" checked>
-                  <span class="filter__size-label">S</span>
-                </label>
-                <label class="filter__size">
-                  <input type="checkbox" class="filter__input filter__input--size" checked>
-                  <span class="filter__size-label">M</span>
-                </label>
-                <label class="filter__size">
-                  <input type="checkbox" class="filter__input filter__input--size" checked>
-                  <span class="filter__size-label">L</span>
-                </label>
-                <label class="filter__size">
-                  <input type="checkbox" class="filter__input filter__input--size">
-                  <span class="filter__size-label">XL</span>
-                </label>
+            <aside class="filter" aria-label="Фильтры каталога">
+              <div class="filter__head">
+                <h2 class="filter__title">Фильтры</h2>
+                <button type="button" class="filter__reset">Сбросить</button>
               </div>
-            </fieldset>
 
-            <fieldset class="filter__group">
-              <legend class="filter__legend">Р¦РІРµС‚</legend>
-              <label class="filter__option">
-                <input type="checkbox" class="filter__input" checked>
-                <span class="filter__swatch filter__swatch--black" aria-hidden="true"></span>
-                <span class="filter__label">Р§С‘СЂРЅС‹Р№</span>
-              </label>
-              <label class="filter__option">
-                <input type="checkbox" class="filter__input" checked>
-                <span class="filter__swatch filter__swatch--white" aria-hidden="true"></span>
-                <span class="filter__label">Р‘РµР»С‹Р№</span>
-              </label>
-              <label class="filter__option">
-                <input type="checkbox" class="filter__input" checked>
-                <span class="filter__swatch filter__swatch--graphite" aria-hidden="true"></span>
-                <span class="filter__label">Р“СЂР°С„РёС‚</span>
-              </label>
-            </fieldset>
+              <fieldset class="filter__group">
+                <legend class="filter__legend">Категория</legend>
+                <label class="filter__option">
+                  <input type="checkbox" class="filter__input" checked>
+                  <span class="filter__label">Свитшоты</span>
+                </label>
+                <label class="filter__option">
+                  <input type="checkbox" class="filter__input" checked>
+                  <span class="filter__label">Худи</span>
+                </label>
+                <label class="filter__option">
+                  <input type="checkbox" class="filter__input" checked>
+                  <span class="filter__label">Футболки</span>
+                </label>
+                <label class="filter__option">
+                  <input type="checkbox" class="filter__input" checked>
+                  <span class="filter__label">Лонгсливы</span>
+                </label>
+              </fieldset>
 
-            <fieldset class="filter__group">
-              <legend class="filter__legend">Р¦РµРЅР°</legend>
-              <label class="filter__option">
-                <input type="checkbox" class="filter__input" checked>
-                <span class="filter__label">Р”Рѕ 3 000 в‚Ѕ</span>
-              </label>
-              <label class="filter__option">
-                <input type="checkbox" class="filter__input" checked>
-                <span class="filter__label">3 000 вЂ” 5 000 в‚Ѕ</span>
-              </label>
-              <label class="filter__option">
-                <input type="checkbox" class="filter__input" checked>
-                <span class="filter__label">5 000 вЂ” 7 000 в‚Ѕ</span>
-              </label>
-              <label class="filter__option">
-                <input type="checkbox" class="filter__input">
-                <span class="filter__label">РЎРѕ СЃРєРёРґРєРѕР№</span>
-              </label>
-            </fieldset>
-          </aside>
+              <fieldset class="filter__group">
+                <legend class="filter__legend">Размер</legend>
+                <div class="filter__sizes">
+                  <label class="filter__size">
+                    <input type="checkbox" class="filter__input filter__input--size">
+                    <span class="filter__size-label">XS</span>
+                  </label>
+                  <label class="filter__size">
+                    <input type="checkbox" class="filter__input filter__input--size" checked>
+                    <span class="filter__size-label">S</span>
+                  </label>
+                  <label class="filter__size">
+                    <input type="checkbox" class="filter__input filter__input--size" checked>
+                    <span class="filter__size-label">M</span>
+                  </label>
+                  <label class="filter__size">
+                    <input type="checkbox" class="filter__input filter__input--size" checked>
+                    <span class="filter__size-label">L</span>
+                  </label>
+                  <label class="filter__size">
+                    <input type="checkbox" class="filter__input filter__input--size">
+                    <span class="filter__size-label">XL</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="filter__group">
+                <legend class="filter__legend">Цвет</legend>
+                <label class="filter__option">
+                  <input type="checkbox" class="filter__input" checked>
+                  <span class="filter__swatch filter__swatch--black" aria-hidden="true"></span>
+                  <span class="filter__label">Чёрный</span>
+                </label>
+                <label class="filter__option">
+                  <input type="checkbox" class="filter__input" checked>
+                  <span class="filter__swatch filter__swatch--white" aria-hidden="true"></span>
+                  <span class="filter__label">Белый</span>
+                </label>
+                <label class="filter__option">
+                  <input type="checkbox" class="filter__input" checked>
+                  <span class="filter__swatch filter__swatch--graphite" aria-hidden="true"></span>
+                  <span class="filter__label">Графит</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="filter__group">
+                <legend class="filter__legend">Цена</legend>
+                <label class="filter__option">
+                  <input type="checkbox" class="filter__input" checked>
+                  <span class="filter__label">До 3 000 ₽</span>
+                </label>
+                <label class="filter__option">
+                  <input type="checkbox" class="filter__input" checked>
+                  <span class="filter__label">3 000 — 5 000 ₽</span>
+                </label>
+                <label class="filter__option">
+                  <input type="checkbox" class="filter__input" checked>
+                  <span class="filter__label">5 000 — 7 000 ₽</span>
+                </label>
+                <label class="filter__option">
+                  <input type="checkbox" class="filter__input">
+                  <span class="filter__label">Со скидкой</span>
+                </label>
+              </fieldset>
+            </aside>
           </div>
 
           <div class="catalog__content">
@@ -161,42 +161,42 @@
                 <a href="#" class="product-card__media">
                   <img
                     src="Resource/Products/Black-Sweatshirt-Pullover-PNG-Background-Photo.png"
-                    alt="РЎРІРёС‚С€РѕС‚ Classic С‡С‘СЂРЅС‹Р№"
+                    alt="Свитшот Classic чёрный"
                     class="product-card__image"
                     loading="lazy"
                   >
                 </a>
                 <div class="product-card__body">
-                  <h2 class="product-card__name">РЎРІРёС‚С€РѕС‚ Classic</h2>
-                  <p class="product-card__meta">РҐР»РѕРїРѕРє В· Р§С‘СЂРЅС‹Р№</p>
+                  <h2 class="product-card__name">Свитшот Classic</h2>
+                  <p class="product-card__meta">Хлопок · Чёрный</p>
                   <div class="product-card__footer">
                     <div class="product-card__prices">
-                      <span class="product-card__price">4 990 в‚Ѕ</span>
+                      <span class="product-card__price">4 990 ₽</span>
                     </div>
-                    <button type="button" class="product-card__btn">Р’ РєРѕСЂР·РёРЅСѓ</button>
+                    <button type="button" class="product-card__btn">В корзину</button>
                   </div>
                 </div>
               </article>
 
               <article class="product-card product-card--sale">
                 <a href="#" class="product-card__media">
-                  <span class="product-card__badge">в€’19%</span>
+                  <span class="product-card__badge">−19%</span>
                   <img
                     src="Resource/Products/pngtree-full-zip-hoodie-blank-black-png-image_6670519.png"
-                    alt="РҐСѓРґРё Zip С‡С‘СЂРЅРѕРµ"
+                    alt="Худи Zip чёрное"
                     class="product-card__image"
                     loading="lazy"
                   >
                 </a>
                 <div class="product-card__body">
-                  <h2 class="product-card__name">РҐСѓРґРё Zip</h2>
-                  <p class="product-card__meta">Р¤Р»РёСЃ В· Р§С‘СЂРЅС‹Р№</p>
+                  <h2 class="product-card__name">Худи Zip</h2>
+                  <p class="product-card__meta">Флис · Чёрный</p>
                   <div class="product-card__footer">
                     <div class="product-card__prices">
-                      <span class="product-card__price product-card__price--current">6 490 в‚Ѕ</span>
-                      <span class="product-card__price product-card__price--old">7 990 в‚Ѕ</span>
+                      <span class="product-card__price product-card__price--current">6 490 ₽</span>
+                      <span class="product-card__price product-card__price--old">7 990 ₽</span>
                     </div>
-                    <button type="button" class="product-card__btn">Р’ РєРѕСЂР·РёРЅСѓ</button>
+                    <button type="button" class="product-card__btn">В корзину</button>
                   </div>
                 </div>
               </article>
@@ -205,42 +205,42 @@
                 <a href="#" class="product-card__media">
                   <img
                     src="Resource/Products/594cf0c7c1c7815cd48c8c72.png"
-                    alt="Р¤СѓС‚Р±РѕР»РєР° Basic Р±РµР»Р°СЏ"
+                    alt="Футболка Basic белая"
                     class="product-card__image"
                     loading="lazy"
                   >
                 </a>
                 <div class="product-card__body">
-                  <h2 class="product-card__name">Р¤СѓС‚Р±РѕР»РєР° Basic</h2>
-                  <p class="product-card__meta">РҐР»РѕРїРѕРє В· Р‘РµР»С‹Р№</p>
+                  <h2 class="product-card__name">Футболка Basic</h2>
+                  <p class="product-card__meta">Хлопок · Белый</p>
                   <div class="product-card__footer">
                     <div class="product-card__prices">
-                      <span class="product-card__price">2 490 в‚Ѕ</span>
+                      <span class="product-card__price">2 490 ₽</span>
                     </div>
-                    <button type="button" class="product-card__btn">Р’ РєРѕСЂР·РёРЅСѓ</button>
+                    <button type="button" class="product-card__btn">В корзину</button>
                   </div>
                 </div>
               </article>
 
               <article class="product-card product-card--sale">
                 <a href="#" class="product-card__media">
-                  <span class="product-card__badge">в€’18%</span>
+                  <span class="product-card__badge">−18%</span>
                   <img
                     src="Resource/Products/Black-Sweatshirt-Pullover-PNG-Background-Photo.png"
-                    alt="РЎРІРёС‚С€РѕС‚ Oversize С‡С‘СЂРЅС‹Р№"
+                    alt="Свитшот Oversize чёрный"
                     class="product-card__image"
                     loading="lazy"
                   >
                 </a>
                 <div class="product-card__body">
-                  <h2 class="product-card__name">РЎРІРёС‚С€РѕС‚ Oversize</h2>
-                  <p class="product-card__meta">РҐР»РѕРїРѕРє В· Р§С‘СЂРЅС‹Р№</p>
+                  <h2 class="product-card__name">Свитшот Oversize</h2>
+                  <p class="product-card__meta">Хлопок · Чёрный</p>
                   <div class="product-card__footer">
                     <div class="product-card__prices">
-                      <span class="product-card__price product-card__price--current">5 290 в‚Ѕ</span>
-                      <span class="product-card__price product-card__price--old">6 490 в‚Ѕ</span>
+                      <span class="product-card__price product-card__price--current">5 290 ₽</span>
+                      <span class="product-card__price product-card__price--old">6 490 ₽</span>
                     </div>
-                    <button type="button" class="product-card__btn">Р’ РєРѕСЂР·РёРЅСѓ</button>
+                    <button type="button" class="product-card__btn">В корзину</button>
                   </div>
                 </div>
               </article>
@@ -249,42 +249,42 @@
                 <a href="#" class="product-card__media">
                   <img
                     src="Resource/Products/pngtree-full-zip-hoodie-blank-black-png-image_6670519.png"
-                    alt="РҐСѓРґРё Relaxed С‡С‘СЂРЅРѕРµ"
+                    alt="Худи Relaxed чёрное"
                     class="product-card__image"
                     loading="lazy"
                   >
                 </a>
                 <div class="product-card__body">
-                  <h2 class="product-card__name">РҐСѓРґРё Relaxed</h2>
-                  <p class="product-card__meta">Р¤Р»РёСЃ В· Р“СЂР°С„РёС‚</p>
+                  <h2 class="product-card__name">Худи Relaxed</h2>
+                  <p class="product-card__meta">Флис · Графит</p>
                   <div class="product-card__footer">
                     <div class="product-card__prices">
-                      <span class="product-card__price">6 990 в‚Ѕ</span>
+                      <span class="product-card__price">6 990 ₽</span>
                     </div>
-                    <button type="button" class="product-card__btn">Р’ РєРѕСЂР·РёРЅСѓ</button>
+                    <button type="button" class="product-card__btn">В корзину</button>
                   </div>
                 </div>
               </article>
 
               <article class="product-card product-card--sale">
                 <a href="#" class="product-card__media">
-                  <span class="product-card__badge">в€’16%</span>
+                  <span class="product-card__badge">−16%</span>
                   <img
                     src="Resource/Products/594cf0c7c1c7815cd48c8c72.png"
-                    alt="Р›РѕРЅРіСЃР»РёРІ Essential Р±РµР»С‹Р№"
+                    alt="Лонгслив Essential белый"
                     class="product-card__image"
                     loading="lazy"
                   >
                 </a>
                 <div class="product-card__body">
-                  <h2 class="product-card__name">Р›РѕРЅРіСЃР»РёРІ Essential</h2>
-                  <p class="product-card__meta">РҐР»РѕРїРѕРє В· Р‘РµР»С‹Р№</p>
+                  <h2 class="product-card__name">Лонгслив Essential</h2>
+                  <p class="product-card__meta">Хлопок · Белый</p>
                   <div class="product-card__footer">
                     <div class="product-card__prices">
-                      <span class="product-card__price product-card__price--current">3 790 в‚Ѕ</span>
-                      <span class="product-card__price product-card__price--old">4 490 в‚Ѕ</span>
+                      <span class="product-card__price product-card__price--current">3 790 ₽</span>
+                      <span class="product-card__price product-card__price--old">4 490 ₽</span>
                     </div>
-                    <button type="button" class="product-card__btn">Р’ РєРѕСЂР·РёРЅСѓ</button>
+                    <button type="button" class="product-card__btn">В корзину</button>
                   </div>
                 </div>
               </article>
@@ -293,42 +293,42 @@
                 <a href="#" class="product-card__media">
                   <img
                     src="Resource/Products/Black-Sweatshirt-Pullover-PNG-Background-Photo.png"
-                    alt="РЎРІРёС‚С€РѕС‚ Heavy С‡С‘СЂРЅС‹Р№"
+                    alt="Свитшот Heavy чёрный"
                     class="product-card__image"
                     loading="lazy"
                   >
                 </a>
                 <div class="product-card__body">
-                  <h2 class="product-card__name">РЎРІРёС‚С€РѕС‚ Heavy</h2>
-                  <p class="product-card__meta">РҐР»РѕРїРѕРє В· РЈРіРѕР»СЊ</p>
+                  <h2 class="product-card__name">Свитшот Heavy</h2>
+                  <p class="product-card__meta">Хлопок · Уголь</p>
                   <div class="product-card__footer">
                     <div class="product-card__prices">
-                      <span class="product-card__price">5 690 в‚Ѕ</span>
+                      <span class="product-card__price">5 690 ₽</span>
                     </div>
-                    <button type="button" class="product-card__btn">Р’ РєРѕСЂР·РёРЅСѓ</button>
+                    <button type="button" class="product-card__btn">В корзину</button>
                   </div>
                 </div>
               </article>
 
               <article class="product-card product-card--sale">
                 <a href="#" class="product-card__media">
-                  <span class="product-card__badge">в€’16%</span>
+                  <span class="product-card__badge">−16%</span>
                   <img
                     src="Resource/Products/pngtree-full-zip-hoodie-blank-black-png-image_6670519.png"
-                    alt="РҐСѓРґРё Essential С‡С‘СЂРЅРѕРµ"
+                    alt="Худи Essential чёрное"
                     class="product-card__image"
                     loading="lazy"
                   >
                 </a>
                 <div class="product-card__body">
-                  <h2 class="product-card__name">РҐСѓРґРё Essential</h2>
-                  <p class="product-card__meta">Р¤Р»РёСЃ В· Р§С‘СЂРЅС‹Р№</p>
+                  <h2 class="product-card__name">Худи Essential</h2>
+                  <p class="product-card__meta">Флис · Чёрный</p>
                   <div class="product-card__footer">
                     <div class="product-card__prices">
-                      <span class="product-card__price product-card__price--current">6 290 в‚Ѕ</span>
-                      <span class="product-card__price product-card__price--old">7 490 в‚Ѕ</span>
+                      <span class="product-card__price product-card__price--current">6 290 ₽</span>
+                      <span class="product-card__price product-card__price--old">7 490 ₽</span>
                     </div>
-                    <button type="button" class="product-card__btn">Р’ РєРѕСЂР·РёРЅСѓ</button>
+                    <button type="button" class="product-card__btn">В корзину</button>
                   </div>
                 </div>
               </article>
@@ -340,4 +340,3 @@
   </main>
 </body>
 </html>
-
